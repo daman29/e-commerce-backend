@@ -81,9 +81,15 @@ router.delete("/:id", (req, res) => {
       return;
     }
 
-    category.destroy();
+    Category.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    
     res.status(200).json({ message: "Category deleted!" });
   } catch (error) {
+    console.log(error);
     res.status(500).json(error);
   }
 });
