@@ -122,8 +122,12 @@ router.delete("/:id", async (req, res) => {
       return;
     }
 
-    await product.destroy();
-    res.status(200).json(product);
+    const deletedProduct = await Product.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.status(200).json(deletedProduct);
   } catch (error) {
     res.status(500).json(error);
   }
