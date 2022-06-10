@@ -7,6 +7,7 @@ A simple e-commerce backend for a fictional store. It is a REST API that allows 
 
 
 Below is the application schema:
+
 ![Schema for the ecommerce_db database with 4 tables, category, product, tag and product_tag.](./assets/images/schema.png)
 
 ## Table of Contents
@@ -24,6 +25,7 @@ Below is the application schema:
 - npm i
 ```
 - Then create update .env.EXAMPLE to .env and update the database connection information below.
+
 ![Db name, username and password in env file](./assets/images/env.png)
 - Then in MySQL source the schema file.
 ```bash
