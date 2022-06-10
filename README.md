@@ -3,7 +3,7 @@
 ![badge for MIT](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Description
-A simple e-commerce backend for a fictional store. It is a REST API that allows you to create, read, update, and delete products, categories, and tags. The model is based on mySQL and sequelize. The backend is written in Node.js and uses the Express framework. A walk-through of the backend can be found [here](https://www.youtube.com/watch?v=ofM3NeMHMQE).
+A simple e-commerce backend for a fictional store. It is a REST API that allows you to create, read, update, and delete products, categories, and tags. The model is based on mySQL and sequelize. The backend is written in Node.js and uses the Express framework. A walk-through of the application can be found [here](https://www.youtube.com/watch?v=ofM3NeMHMQE).
 
 
 Below is the application schema:
@@ -23,6 +23,8 @@ Below is the application schema:
 - git clone git@github.com:daman29/e-commerce-backend.git
 - npm i
 ```
+- Then create update .env.EXAMPLE to .env and update the database connection information below.
+![Db name, username and password in env file](./assets/images/env.png)
 - Then in MySQL source the schema file.
 ```bash
 - source schema.sql;
@@ -43,7 +45,7 @@ Below is the application schema:
 
 The GIF below shows the application's appearance and functionality.
 
-![Application run through as a GIF](./assets/images/demo-gif.gif)
+![Application run through as a GIF](./assets/images/demogif.gif)
 
 
 ## License
